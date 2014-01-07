@@ -2010,7 +2010,7 @@
 				outString += "/";
 				break;
 			case 0xFF1A: // ：	[FULLWIDTH COLON]
-				outString += ";";
+				outString += ":";
 				break;
 			case 0x204F: // ⁏	[REVERSED SEMICOLON]
 			case 0xFF1B: // ；	[FULLWIDTH SEMICOLON]
