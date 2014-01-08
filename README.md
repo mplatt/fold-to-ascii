@@ -23,7 +23,7 @@ Should this be `true`, a universal replacement string for these characters can b
 
 ## Usage
 
-`foldToASCII("Północ")` will output `Polnoc`
+`foldToASCII("Północ")` will return `Polnoc`
 
 ## Tests
 
