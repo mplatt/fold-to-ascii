@@ -1,5 +1,6 @@
 /**
  * fold-to-ascii.js
+ * https://github.com/mplatt/fold-to-ascii-js
  * 
  * This is a JavaScript port of the Apache Lucene ASCII Folding Filter.
  * 
