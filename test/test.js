@@ -1779,18 +1779,18 @@ QUnit.test("QuotationMarkTest", function() {
 	equal(foldToASCII(String.fromCharCode(0xff02)), "\"", "This is function is expected to escape the unicode sequence \"\\uFF02\" to \"\"\"");
 });
 
-QUnit.test("QuotationMarkTest", function() {
-	equal(foldToASCII(String.fromCharCode(0x2018)), "\"", "This is function is expected to escape the unicode sequence \"\\u2018\" to \"\"\"");
-	equal(foldToASCII(String.fromCharCode(0x2019)), "\"", "This is function is expected to escape the unicode sequence \"\\u2019\" to \"\"\"");
-	equal(foldToASCII(String.fromCharCode(0x201a)), "\"", "This is function is expected to escape the unicode sequence \"\\u201A\" to \"\"\"");
-	equal(foldToASCII(String.fromCharCode(0x201b)), "\"", "This is function is expected to escape the unicode sequence \"\\u201B\" to \"\"\"");
-	equal(foldToASCII(String.fromCharCode(0x2032)), "\"", "This is function is expected to escape the unicode sequence \"\\u2032\" to \"\"\"");
-	equal(foldToASCII(String.fromCharCode(0x2035)), "\"", "This is function is expected to escape the unicode sequence \"\\u2035\" to \"\"\"");
-	equal(foldToASCII(String.fromCharCode(0x2039)), "\"", "This is function is expected to escape the unicode sequence \"\\u2039\" to \"\"\"");
-	equal(foldToASCII(String.fromCharCode(0x203a)), "\"", "This is function is expected to escape the unicode sequence \"\\u203A\" to \"\"\"");
-	equal(foldToASCII(String.fromCharCode(0x275b)), "\"", "This is function is expected to escape the unicode sequence \"\\u275B\" to \"\"\"");
-	equal(foldToASCII(String.fromCharCode(0x275c)), "\"", "This is function is expected to escape the unicode sequence \"\\u275C\" to \"\"\"");
-	equal(foldToASCII(String.fromCharCode(0xff07)), "\"", "This is function is expected to escape the unicode sequence \"\\uFF07\" to \"\"\"");
+QUnit.test("ApostropheTest", function() {
+	equal(foldToASCII(String.fromCharCode(0x2018)), "'", "This is function is expected to escape the unicode sequence \"\\u2018\" to \"'\"");
+	equal(foldToASCII(String.fromCharCode(0x2019)), "'", "This is function is expected to escape the unicode sequence \"\\u2019\" to \"'\"");
+	equal(foldToASCII(String.fromCharCode(0x201a)), "'", "This is function is expected to escape the unicode sequence \"\\u201A\" to \"'\"");
+	equal(foldToASCII(String.fromCharCode(0x201b)), "'", "This is function is expected to escape the unicode sequence \"\\u201B\" to \"'\"");
+	equal(foldToASCII(String.fromCharCode(0x2032)), "'", "This is function is expected to escape the unicode sequence \"\\u2032\" to \"'\"");
+	equal(foldToASCII(String.fromCharCode(0x2035)), "'", "This is function is expected to escape the unicode sequence \"\\u2035\" to \"'\"");
+	equal(foldToASCII(String.fromCharCode(0x2039)), "'", "This is function is expected to escape the unicode sequence \"\\u2039\" to \"'\"");
+	equal(foldToASCII(String.fromCharCode(0x203a)), "'", "This is function is expected to escape the unicode sequence \"\\u203A\" to \"'\"");
+	equal(foldToASCII(String.fromCharCode(0x275b)), "'", "This is function is expected to escape the unicode sequence \"\\u275B\" to \"'\"");
+	equal(foldToASCII(String.fromCharCode(0x275c)), "'", "This is function is expected to escape the unicode sequence \"\\u275C\" to \"'\"");
+	equal(foldToASCII(String.fromCharCode(0xff07)), "'", "This is function is expected to escape the unicode sequence \"\\uFF07\" to \"'\"");
 });
 
 QUnit.test("Hyphen-minusTest", function() {

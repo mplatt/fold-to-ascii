@@ -1899,7 +1899,7 @@
 			case 0x275B: // ❛	[HEAVY SINGLE TURNED COMMA QUOTATION MARK ORNAMENT]
 			case 0x275C: // ❜	[HEAVY SINGLE COMMA QUOTATION MARK ORNAMENT]
 			case 0xFF07: // ＇	[FULLWIDTH APOSTROPHE]
-				outString += "\"";
+				outString += "'";
 				break;
 			case 0x2010: // ‐	[HYPHEN]
 			case 0x2011: // ‑	[NON-BREAKING HYPHEN]
