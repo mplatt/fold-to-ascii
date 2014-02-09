@@ -235,7 +235,7 @@ The replacements featured here are kept as general as possible.
  ⒛ | 20. 
  ⒇ | (20) 
  « » “ ” „ ″ ‶ ❝ ❞ ❮ ❯ ＂ | " 
- ‘ ’ ‚ ‛ ′ ‵ ‹ › ❛ ❜ ＇ | \ 
+ ‘ ’ ‚ ‛ ′ ‵ ‹ › ❛ ❜ ＇ | ' 
  ‐ ‑ ‒ – — ⁻ ₋ － | - 
  ⁅ ❲ ［ | [ 
  ⁆ ❳ ］ | ] 
