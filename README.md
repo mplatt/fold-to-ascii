@@ -23,11 +23,19 @@ Should this be `true`, a universal replacement string for these characters can b
 
 ## Usage
 
-`foldToASCII("Północ")` will output `Polnoc`
+`foldToASCII("Północ")` will return `Polnoc`
 
 ## Tests
 
 All replacement tasks are covered by QUnit tests. See https://github.com/mplatt/fold-to-ascii-js/blob/master/test/test.html
+
+## FAQ
+
+### Why is character *x* being replaced with *y* and not with *z*?
+
+The unambiguous allocation of characters to replacements is not possible since it is language-dependent.
+For example a user from France might expect *ü* to be replaced with *u* while a user from Germany expects the replacement to be *ue*.
+The replacements featured here are kept as general as possible.
 
 # Replacement Patterns
 
