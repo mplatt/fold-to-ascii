@@ -25,6 +25,9 @@ Should this be `true`, a universal replacement string for these characters can b
 
 `foldToASCII("Północ")` will return `Polnoc`
 
+`var x = "Północ"`
+`x.foldToASCII() // #=> "Polnoc"`
+
 ## Tests
 
 All replacement tasks are covered by QUnit tests. See https://github.com/mplatt/fold-to-ascii-js/blob/master/test/test.html
