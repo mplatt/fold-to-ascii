@@ -23,10 +23,9 @@ Should this be `true`, a universal replacement string for these characters can b
 
 ## Usage
 
-`foldToASCII("Północ")` will return `Polnoc`
-
-`var x = "Północ"`
-`x.foldToASCII() // #=> "Polnoc"`
+    foldToASCII("Północ") //=> "Polnoc"
+    var x = "Północ"
+    x.foldToASCII() //=> "Polnoc"
 
 ## Tests
 
