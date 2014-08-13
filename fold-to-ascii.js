@@ -58,6 +58,10 @@
 	 */
 	var defaultString = "_";
 
+	String.prototype.foldToASCII = function() {
+		return foldToASCII(this);
+	};
+
 	foldToASCII = function(inStr) {
 		if (inStr === null) {
 			return "";
