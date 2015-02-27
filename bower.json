@@ -1,0 +1,26 @@
+{
+  "name": "fold-to-ascii",
+  "main": "index.js",
+  "version": "2.0.0",
+  "authors": [
+    "Moritz Platt <moritz.platt@googlemail.com>"
+  ],
+  "description": "A JavaScript port of the Apache Lucene ASCII Folding Filter that converts alphabetic, numeric, and symbolic Unicode characters which are not in the first 127 ASCII characters (the \"Basic Latin\" Unicode block) into ASCII equivalents, if they exist.",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "ascii",
+    "sanitize",
+    "diacritics"
+  ],
+  "license": "Apache License, Version 2.0",
+  "homepage": "https://github.com/mplatt/fold-to-ascii",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
