@@ -22,7 +22,7 @@ console.log(foldToAscii.fold("★ Lorém ïpsum dölor."));
 // Results in "★ Lorem ipsum dolor."
 ```
 
-If no replacement parameter is specified, unmapped characters will not be replaced. If you require an ASCII string, you thus must specify a replacement character.
+If no replacement parameter is specified, unmapped characters will not be replaced. If you require an ASCII string, you thus must specify a replacement character within the range of ASCII characters.
 
 ## Tests
 
