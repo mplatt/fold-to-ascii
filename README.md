@@ -5,6 +5,10 @@ A JavaScript port of the Apache Lucene ASCII Folding Filter that converts alphab
 
 # Documentation
 
+## Package Manager Availability
+
+This package is available in the npm registry npm (https://www.npmjs.com/package/fold-to-ascii) and in Bower.
+
 ## Usage
 
 It is simple:
