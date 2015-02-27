@@ -1575,7 +1575,7 @@ var replaceChar = function(charCode, replace, replacement) {
         case 0xFF5E: // ～	[FULLWIDTH TILDE]
             return "~";
         default:
-            return (replace ? replacement : String.fromCharCode(charCode));
+            return (replace ? replacement : "");
     }
 };
 
