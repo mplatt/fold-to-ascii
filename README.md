@@ -7,7 +7,7 @@ A JavaScript port of the Apache Lucene ASCII Folding Filter that converts alphab
 
 ## Package Manager Availability
 
-This package is available in the npm registry npm (https://www.npmjs.com/package/fold-to-ascii) and in Bower.
+This package is available in the npm registry (https://www.npmjs.com/package/fold-to-ascii) and in Bower.
 
 ## Usage
 
