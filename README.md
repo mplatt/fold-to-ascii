@@ -5,6 +5,19 @@ A JavaScript port of the Apache Lucene ASCII Folding Filter that converts alphab
 
 # Documentation
 
+## Installation
+
+### Package Manager
+
+Npm: ```npm install fold-to-ascii```
+
+Bower: ```bower install fold-to-ascii```
+
+### Stand-alone
+
+This version no longer exposes the ```window.foldToAscii``` variable in favour of a more modular approach using npm's ```module.exports```.
+Should you require a stand-alone version, [Browserify](http://browserify.org/) appears to be the tool of choice (```browserify index.js > bundle.js```).
+
 ## Usage
 
 It is simple:
