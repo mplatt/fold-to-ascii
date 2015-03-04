@@ -13,7 +13,10 @@
   "keywords": [
     "ascii",
     "sanitize",
-    "diacritics"
+    "diacritics",
+    "unicode",
+    "folding",
+    "ligatures"
   ],
   "author": "Moritz Platt <moritz.platt@googlemail.com>",
   "license": "Apache-2.0",
