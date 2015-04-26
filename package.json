@@ -25,6 +25,8 @@
   },
   "homepage": "https://github.com/mplatt/fold-to-ascii",
   "devDependencies": {
-    "qunit": "^0.7.5"
+    "benchmark": "^1.0.0",
+    "microtime": "^1.3.0",
+    "qunit": "^0.7.6"
   }
 }
