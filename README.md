@@ -47,15 +47,6 @@ This is a straightforward port of the *very extensive* switch/case statement fou
 
 The function to determine character codes is taken from a code example in the MDN (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt#Example.3A_Fixing_charCodeAt_to_handle_non-Basic-Multilingual-Plane_characters_if_their_presence_earlier_in_the_string_is_unknown).
 
-# Benchmarks
-
-```
-$ node benchmark.js 
-switchCase x 976,620 ops/sec ±1.18% (96 runs sampled)
-objectSwitch x 2,097,464 ops/sec ±1.03% (94 runs sampled)
-Fastest is objectSwitch
-```
-
 # FAQ
 
 ## Why is character *x* being replaced with *y* and not with *z*?
