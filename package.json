@@ -2,9 +2,11 @@
   "name": "fold-to-ascii",
   "version": "3.0.0",
   "description": "A JavaScript port of the Apache Lucene ASCII Folding Filter that converts alphabetic, numeric, and symbolic Unicode characters which are not in the first 127 ASCII characters (the \"Basic Latin\" Unicode block) into a ASCII equivalents, if they exist.",
-  "main": "lib/ascii-folder.js",
+  "main": "dist/ascii-folder.js",
   "scripts": {
-    "test": "./node_modules/.bin/qunit --code ./lib/ascii-folder.js --tests ./test/ascii-folder.js"
+    "test": "./node_modules/.bin/qunit --code ./lib/ascii-folder.js --tests ./test/ascii-folder.js",
+    "build": "rimraf dist && babel -d dist/ lib/",
+    "prepublish": "npm test && npm run build"
   },
   "repository": {
     "type": "git",
@@ -25,7 +27,10 @@
   },
   "homepage": "https://github.com/mplatt/fold-to-ascii",
   "devDependencies": {
-    "qunit": "0.9.1"
+    "babel-cli": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "qunit": "0.9.1",
+    "rimraf": "^2.5.2"
   },
   "engines": {
     "node": ">= 4.0.0"
