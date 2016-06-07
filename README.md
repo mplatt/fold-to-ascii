@@ -13,6 +13,8 @@ equivalents, if one exists.
 
 Npm: ```npm install fold-to-ascii```
 
+Recent versions require ES6 (i.e. node 4.0.0+). An ES5 version can be obtained by installing 2.0.2 (```npm install fold-to-ascii@2.0.2```).
+
 Bower: ```bower install fold-to-ascii```
 
 ## Usage
