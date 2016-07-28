@@ -1,7 +1,7 @@
 fold-to-ascii-js
 ================
 
-An ES6 port of the Apache Lucene ASCII Folding Filter that converts alphabetic, numeric, and symbolic Unicode
+A JavaScript port of the Apache Lucene ASCII Folding Filter that converts alphabetic, numeric, and symbolic Unicode
 characters which are not in the first 127 ASCII characters (the "Basic Latin" Unicode block) into their ASCII
 equivalents, if one exists.
 
@@ -13,7 +13,7 @@ equivalents, if one exists.
 
 Npm: ```npm install fold-to-ascii```
 
-Recent versions require ES6 (i.e. node 4.0.0+). An ES5 version can be obtained by installing 2.0.2 (```npm install fold-to-ascii@2.0.2```).
+Recent versions require ES2015 support (i.e. node 6+). An ES5 version can be obtained by installing 2.0.2 (```npm install fold-to-ascii@2.0.2```).
 
 Bower: ```bower install fold-to-ascii```
 
@@ -21,15 +21,14 @@ Bower: ```bower install fold-to-ascii```
 
 ```JavaScript
 var ASCIIFolder = require("./lib/ascii-folder");
-var asciiFolder = new ASCIIFolder();
 
 // Folding with replacement of unmapped characters with the "_" character:
-console.log(asciiFolder.fold("★Lorém ïpsum dölor.", "_"));
+console.log(ASCIIFolder.fold("★Lorém ïpsum dölor.", "_"));
 // Results in "_Lorem ipsum dolor."
 
 // Folding without replacement of unmapped characters:
-console.log(asciiFolder.fold("★Lorém ïpsum dölor.", null));
-console.log(asciiFolder.fold("★Lorém ïpsum dölor."));
+console.log(ASCIIFolder.fold("★Lorém ïpsum dölor.", null));
+console.log(ASCIIFolder.fold("★Lorém ïpsum dölor."));
 // Both calls result in "Lorem ipsum dolor."
 ```
 

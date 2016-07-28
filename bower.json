@@ -1,7 +1,7 @@
 {
   "name": "fold-to-ascii",
-  "main": "index.js",
-  "version": "3.0.0",
+  "main": "lib/ascii-folder.js",
+  "version": "3.1.0",
   "authors": [
     "Moritz Platt <moritz.platt@googlemail.com>"
   ],
