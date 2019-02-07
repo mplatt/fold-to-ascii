@@ -33,6 +33,14 @@ QUnit.test("asciiPrintableTest", function () {
     equal(ASCIIFolder.fold("0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~ !\"#$%&'()*+,-./"), "0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~ !\"#$%&'()*+,-./", "This is expected to return the ASCII printable characters.");
 });
 
+QUnit.test("keepsUnknownCharactersTest", function () {
+    equal(ASCIIFolder.fold("🤧😇", null), "🤧😇", "This is expected to return the ASCII printable characters.");
+});
+
+QUnit.test("replacesUnknownCharactersTest", function () {
+    equal(ASCIIFolder.fold("🤧😇"), "", "This is expected to return the ASCII printable characters.");
+});
+
 QUnit.test("ATest", function () {
     equal(ASCIIFolder.fold(String.fromCharCode(0xc0)), "A", "This is function is expected to escape the unicode sequence \"\\u00C0\" to \"A\"");
     equal(ASCIIFolder.fold(String.fromCharCode(0xc1)), "A", "This is function is expected to escape the unicode sequence \"\\u00C1\" to \"A\"");
