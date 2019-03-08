@@ -28,8 +28,11 @@ console.log(ASCIIFolder.fold("★Lorém ïpsum dölor.", "_"));
 
 // Folding without replacement of unmapped characters:
 console.log(ASCIIFolder.fold("★Lorém ïpsum dölor.", null));
+// Results in "★Lorem ipsum dolor."
+
+// Folding with removal of unmapped characters
 console.log(ASCIIFolder.fold("★Lorém ïpsum dölor."));
-// Both calls result in "Lorem ipsum dolor."
+// Results in "Lorem ipsum dolor."
 ```
 
 If no replacement parameter is specified, unmapped characters will be replaced by the empty string.
