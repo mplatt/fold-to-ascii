@@ -34,11 +34,16 @@ QUnit.test("asciiPrintableTest", function () {
 });
 
 QUnit.test("keepsUnknownCharactersTest", function () {
-    equal(ASCIIFolder.fold("🤧😇", null), "🤧😇", "This is expected to return the ASCII printable characters.");
+    equal(ASCIIFolder.fold("🤧😇", null), "🤧😇");
+    equal(ASCIIFolder.fold("🍆", null), "🍆");
 });
 
 QUnit.test("replacesUnknownCharactersTest", function () {
     equal(ASCIIFolder.fold("🤧😇"), "", "This is expected to return the ASCII printable characters.");
+});
+
+QUnit.test("kanjiTest", function () {
+    equal(ASCIIFolder.fold("お早うございます", null), "お早うございます", "Leaves Kanji script unchanged");
 });
 
 QUnit.test("ATest", function () {
