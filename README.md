@@ -26,7 +26,7 @@ var ASCIIFolder = require("./lib/ascii-folder");
 ASCIIFolder.foldReplacing("Lörem 🤧 ëripuît") === "Lorem  eripuit";
 ASCIIFolder.foldReplacing("Lörem 🤧 ëripuît", "X") === "Lorem XX eripuit";
 
-ASCIIFolder.foldMaintaining("Lörem 🤧 ëripuît", "X") === "Lorem 🤧 eripuit";
+ASCIIFolder.foldMaintaining("Lörem 🤧 ëripuît") === "Lorem 🤧 eripuit";
 ```
 
 ## Tests
