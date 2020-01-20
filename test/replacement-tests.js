@@ -34,7 +34,6 @@ QUnit.test("ATest", assert => {
     assert.equal(foldStrict(String.fromCharCode(0xc1)), "A", " \"\\u00C1\": \"A\"");
     assert.equal(foldStrict(String.fromCharCode(0xc2)), "A", " \"\\u00C2\": \"A\"");
     assert.equal(foldStrict(String.fromCharCode(0xc3)), "A", " \"\\u00C3\": \"A\"");
-    assert.equal(foldStrict(String.fromCharCode(0xc4)), "A", " \"\\u00C4\": \"A\"");
     assert.equal(foldStrict(String.fromCharCode(0xc5)), "A", " \"\\u00C5\": \"A\"");
     assert.equal(foldStrict(String.fromCharCode(0x100)), "A", " \"\\u0100\": \"A\"");
     assert.equal(foldStrict(String.fromCharCode(0x102)), "A", " \"\\u0102\": \"A\"");
@@ -71,7 +70,6 @@ QUnit.test("aTest", assert => {
     assert.equal(foldStrict(String.fromCharCode(0xe1)), "a", " \"\\u00E1\": \"a\"");
     assert.equal(foldStrict(String.fromCharCode(0xe2)), "a", " \"\\u00E2\": \"a\"");
     assert.equal(foldStrict(String.fromCharCode(0xe3)), "a", " \"\\u00E3\": \"a\"");
-    assert.equal(foldStrict(String.fromCharCode(0xe4)), "a", " \"\\u00E4\": \"a\"");
     assert.equal(foldStrict(String.fromCharCode(0xe5)), "a", " \"\\u00E5\": \"a\"");
     assert.equal(foldStrict(String.fromCharCode(0x101)), "a", " \"\\u0101\": \"a\"");
     assert.equal(foldStrict(String.fromCharCode(0x103)), "a", " \"\\u0103\": \"a\"");
@@ -115,6 +113,7 @@ QUnit.test("AATest", assert => {
 });
 
 QUnit.test("AETest", assert => {
+    assert.equal(foldStrict(String.fromCharCode(0xc4)), "AE", " \"\\u00C4\": \"AE\"");
     assert.equal(foldStrict(String.fromCharCode(0xc6)), "AE", " \"\\u00C6\": \"AE\"");
     assert.equal(foldStrict(String.fromCharCode(0x1e2)), "AE", " \"\\u01E2\": \"AE\"");
     assert.equal(foldStrict(String.fromCharCode(0x1fc)), "AE", " \"\\u01FC\": \"AE\"");
@@ -147,6 +146,7 @@ QUnit.test("aaTest", assert => {
 });
 
 QUnit.test("aeTest", assert => {
+    assert.equal(foldStrict(String.fromCharCode(0xe4)), "ae", " \"\\u00E4\": \"ae\"");
     assert.equal(foldStrict(String.fromCharCode(0xe6)), "ae", " \"\\u00E6\": \"ae\"");
     assert.equal(foldStrict(String.fromCharCode(0x1e3)), "ae", " \"\\u01E3\": \"ae\"");
     assert.equal(foldStrict(String.fromCharCode(0x1fd)), "ae", " \"\\u01FD\": \"ae\"");
@@ -816,7 +816,6 @@ QUnit.test("OTest", assert => {
     assert.equal(foldStrict(String.fromCharCode(0xd3)), "O", " \"\\u00D3\": \"O\"");
     assert.equal(foldStrict(String.fromCharCode(0xd4)), "O", " \"\\u00D4\": \"O\"");
     assert.equal(foldStrict(String.fromCharCode(0xd5)), "O", " \"\\u00D5\": \"O\"");
-    assert.equal(foldStrict(String.fromCharCode(0xd6)), "O", " \"\\u00D6\": \"O\"");
     assert.equal(foldStrict(String.fromCharCode(0xd8)), "O", " \"\\u00D8\": \"O\"");
     assert.equal(foldStrict(String.fromCharCode(0x14c)), "O", " \"\\u014C\": \"O\"");
     assert.equal(foldStrict(String.fromCharCode(0x14e)), "O", " \"\\u014E\": \"O\"");
@@ -863,7 +862,6 @@ QUnit.test("oTest", assert => {
     assert.equal(foldStrict(String.fromCharCode(0xf3)), "o", " \"\\u00F3\": \"o\"");
     assert.equal(foldStrict(String.fromCharCode(0xf4)), "o", " \"\\u00F4\": \"o\"");
     assert.equal(foldStrict(String.fromCharCode(0xf5)), "o", " \"\\u00F5\": \"o\"");
-    assert.equal(foldStrict(String.fromCharCode(0xf6)), "o", " \"\\u00F6\": \"o\"");
     assert.equal(foldStrict(String.fromCharCode(0xf8)), "o", " \"\\u00F8\": \"o\"");
     assert.equal(foldStrict(String.fromCharCode(0x14d)), "o", " \"\\u014D\": \"o\"");
     assert.equal(foldStrict(String.fromCharCode(0x14f)), "o", " \"\\u014F\": \"o\"");
@@ -909,6 +907,7 @@ QUnit.test("oTest", assert => {
 });
 
 QUnit.test("OETest", assert => {
+    assert.equal(foldStrict(String.fromCharCode(0xd6)), "OE", " \"\\u00D6\": \"OE\"");
     assert.equal(foldStrict(String.fromCharCode(0x152)), "OE", " \"\\u0152\": \"OE\"");
     assert.equal(foldStrict(String.fromCharCode(0x276)), "OE", " \"\\u0276\": \"OE\"");
 });
@@ -927,6 +926,7 @@ QUnit.test("LeftParenthesisLatinSmallLetterORightParenthesisTest", assert => {
 });
 
 QUnit.test("oeTest", assert => {
+    assert.equal(foldStrict(String.fromCharCode(0xf6)), "oe", " \"\\u00F6\": \"oe\"");
     assert.equal(foldStrict(String.fromCharCode(0x153)), "oe", " \"\\u0153\": \"oe\"");
     assert.equal(foldStrict(String.fromCharCode(0x1d14)), "oe", " \"\\u1D14\": \"oe\"");
 });
@@ -1178,7 +1178,6 @@ QUnit.test("UTest", assert => {
     assert.equal(foldStrict(String.fromCharCode(0xd9)), "U", " \"\\u00D9\": \"U\"");
     assert.equal(foldStrict(String.fromCharCode(0xda)), "U", " \"\\u00DA\": \"U\"");
     assert.equal(foldStrict(String.fromCharCode(0xdb)), "U", " \"\\u00DB\": \"U\"");
-    assert.equal(foldStrict(String.fromCharCode(0xdc)), "U", " \"\\u00DC\": \"U\"");
     assert.equal(foldStrict(String.fromCharCode(0x168)), "U", " \"\\u0168\": \"U\"");
     assert.equal(foldStrict(String.fromCharCode(0x16a)), "U", " \"\\u016A\": \"U\"");
     assert.equal(foldStrict(String.fromCharCode(0x16c)), "U", " \"\\u016C\": \"U\"");
@@ -1216,7 +1215,6 @@ QUnit.test("uTest", assert => {
     assert.equal(foldStrict(String.fromCharCode(0xf9)), "u", " \"\\u00F9\": \"u\"");
     assert.equal(foldStrict(String.fromCharCode(0xfa)), "u", " \"\\u00FA\": \"u\"");
     assert.equal(foldStrict(String.fromCharCode(0xfb)), "u", " \"\\u00FB\": \"u\"");
-    assert.equal(foldStrict(String.fromCharCode(0xfc)), "u", " \"\\u00FC\": \"u\"");
     assert.equal(foldStrict(String.fromCharCode(0x169)), "u", " \"\\u0169\": \"u\"");
     assert.equal(foldStrict(String.fromCharCode(0x16b)), "u", " \"\\u016B\": \"u\"");
     assert.equal(foldStrict(String.fromCharCode(0x16d)), "u", " \"\\u016D\": \"u\"");
@@ -1250,11 +1248,16 @@ QUnit.test("uTest", assert => {
     assert.equal(foldStrict(String.fromCharCode(0xff55)), "u", " \"\\uFF55\": \"u\"");
 });
 
+QUnit.test("UETest", assert => {
+    assert.equal(foldStrict(String.fromCharCode(0xdc)), "UE", " \"\\u00DC\": \"UE\"");
+});
+
 QUnit.test("LeftParenthesisLatinSmallLetterURightParenthesisTest", assert => {
     assert.equal(foldStrict(String.fromCharCode(0x24b0)), "(u)", " \"\\u24B0\": \"(u)\"");
 });
 
 QUnit.test("ueTest", assert => {
+    assert.equal(foldStrict(String.fromCharCode(0xfc)), "ue", " \"\\u00FC\": \"ue\"");
     assert.equal(foldStrict(String.fromCharCode(0x1d6b)), "ue", " \"\\u1D6B\": \"ue\"");
 });
 

@@ -23,10 +23,10 @@ var ASCIIFolder = require("./lib/ascii-folder");
 
 // Some Characters have no defined replacement.
 // Specify a fixed replacement character (defaults to the empty string).
-ASCIIFolder.foldReplacing("Lörem 🤧 ëripuît") === "Lorem  eripuit";
-ASCIIFolder.foldReplacing("Lörem 🤧 ëripuît", "X") === "Lorem XX eripuit";
+ASCIIFolder.foldReplacing("Lörem 🤧 ëripuît") === "Loerem  eripuit";
+ASCIIFolder.foldReplacing("Lörem 🤧 ëripuît", "X") === "Loerem XX eripuit";
 
-ASCIIFolder.foldMaintaining("Lörem 🤧 ëripuît") === "Lorem 🤧 eripuit";
+ASCIIFolder.foldMaintaining("Lörem 🤧 ëripuît") === "Loerem 🤧 eripuit";
 ```
 
 ## Tests
